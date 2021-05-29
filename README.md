@@ -1,5 +1,5 @@
 # Craftivity-Data
-This project focuses on providing data for creativity applications. The data provided is in the form of a Trashnet dataset, ML Model for garbage detection, and craft data based on the type of Garbage.
+This project focuses on providing data for Craftivity applications. The data provided is in the form of a Trashnet dataset, ML Model for garbage detection, and craft data based on the type of Garbage.
 
 For now, using CNN and DNN the accuracy test is ~ 80% (70/15/15 train / val / test split). The model is deployed into tflite with two types of float and quant (optimization).
 
