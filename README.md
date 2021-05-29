@@ -1,7 +1,14 @@
-# Craftivity
-For most people, waste is an item that can no longer be used. Garbage disposed of into the environment can cause pollution. They consider garbage as something that must be thrown away, so they often ignore it and just leave the trash without knowing that trash can be used as a useful item. Recycling into crafts can reduce non-biodegradable waste and the amount of
-waste that enters the landfill (TPA) and can be used as a source of community income by selling valuable recycled products. With this application we can invite people to process waste into goods of economic value.
+# Craftivity-Data
+This project focuses on providing data for creativity applications. The data provided is in the form of a Trashnet dataset, ML Model for garbage detection, and craft data based on the type of Garbage.
 
+For now, using CNN and DNN the accuracy test is ~ 80% (70/15/15 train / val / test split). The model is deployed into tflite with two types of float and quant (optimization).
+
+The float model has been tested using the sample template provided by TensorFlow Lite (https://github.com/tensorflow/examples) with the following results:  
+![img1](assets/images/cardboard.jpeg)
+![img2](assets/images/plastic.jpeg)
+![img3](assets/images/paper.jpeg)
+![img4](assets/images/glass.jpeg)
+![img5](assets/images/metal.jpeg)
 
 ## Dataset
 The dataset spans six classes: glass, paper, cardboard, plastic, metal, and trash. Currently, the dataset consists of 2527 images:
@@ -31,4 +38,4 @@ Link : https://github.com/garythung/trashnet
 ## TODOs
 - Improve model accuracy with neural network architectures, update datasets, use transfer learning, and more.
 - Complete the section marked with "TODO" on each file
-- ...?
+- Deploy model ML to Android (tflite) or VM Cloud (How) ?
